@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecyclerViewPractice</string>
+    <string name="err_no_cards">No cards found.</string>
+</resources>
