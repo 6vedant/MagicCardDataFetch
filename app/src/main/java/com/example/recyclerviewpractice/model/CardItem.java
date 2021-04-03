@@ -7,6 +7,7 @@ import java.io.Serializable;
 
 public class CardItem implements Serializable {
 
+    private String id;
     private String name;
     private String rarity;
     private String type;
@@ -15,7 +16,8 @@ public class CardItem implements Serializable {
     private String text;
     private String multiVerseId;
 
-    public CardItem(String name, String rarity, String type, String set, String setname, String text, String multiVerseId) {
+    public CardItem(String id, String name, String rarity, String type, String set, String setname, String text, String multiVerseId) {
+        this.id = id;
         this.name = name;
         this.rarity = rarity;
         this.type = type;
@@ -71,6 +73,14 @@ public class CardItem implements Serializable {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getMultiVerseId() {
